@@ -19,6 +19,9 @@
 
 .button-links {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap to a new line if necessary */
+    justify-content: center; /* Centers items horizontally */
 }
 
 .button {
@@ -28,7 +31,17 @@
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-right: 10px;
+    margin: 0 5px 10px; /* Adjust margin for spacing between buttons */
+    width: calc(50% - 10px); /* Adjust width to make two buttons per row */
+    max-width: 200px; /* Limit maximum width of each button */
+    text-align: center; /* Centers text within the button */
+}
+
+@media (min-width: 768px) {
+    .button {
+        width: auto; /* Revert width back to auto on larger screens */
+        max-width: none; /* Remove max-width on larger screens */
+    }
 }
 
 .button:hover {
