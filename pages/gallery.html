@@ -1,70 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Scroll Page</title>
+    <title>Gallery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .media {
+        .gallery {
             display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
         }
-        .media img, .media video {
+        .gallery img {
             max-width: 100%;
             height: auto;
-        }
-        .media a {
-            text-decoration: none;
-            color: black;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Gallery</h1>
-        <div class="media">
-            <a href="https://raw.githubusercontent.com/SatyenderSinghRana/rms_essentials/gh-pages/Assets/Gallery/p1.jpeg">
-                <img src="https://raw.githubusercontent.com/SatyenderSinghRana/rms_essentials/gh-pages/Assets/Gallery/p1.jpeg" alt="Image 1">
-            </a>
-            <img src="Assets/Gallery/p1.jpeg" alt="Image 1">
-            <a href="Assets/Gallery/p2.jpeg">
-                <img src="Assets/Gallery/p2.jpeg" alt="Image 2">
-            </a>
-            <a href="Assets/Gallery/p3.jpeg">
-                <img src="Assets/Gallery/p3.jpeg" alt="Image 3">
-            </a>
-            <a href="Assets/Gallery/p4.jpeg">
-                <img src="Assets/Gallery/p4.jpeg" alt="Image 4">
-            </a>
-            <a href="Assets/Gallery/p5.jpeg">
-                <img src="Assets/Gallery/p5.jpeg" alt="Image 5">
-            </a>
-            <a href="Assets/Gallery/p6.jpeg">
-                <img src="Assets/Gallery/p6.jpeg" alt="Image 6">
-            </a>
-            <a href="Assets/Gallery/p7.jpeg">
-                <img src="Assets/Gallery/p7.jpeg" alt="Image 7">
-            </a>
-            <a href="Assets/Gallery/p8.jpeg">
-                <img src="Assets/Gallery/p8.jpeg" alt="Image 8">
-            </a>
-            <a>
-                <img src="Assets/Gallery/p9.jpeg" alt="Image 9">
-            </a>
-        </div>
+    <h1 style="text-align:center;">Gallery</h1>
+    <div class="gallery">
+        <img src="Assets/Gallery/p1.jpeg" alt="Image 1">
+        <img src="https://via.placeholder.com/300" alt="Image 2">
+        <img src="https://via.placeholder.com/300" alt="Image 3">
+        <img src="https://via.placeholder.com/300" alt="Image 4">
+        <img src="https://via.placeholder.com/300" alt="Image 5">
     </div>
 </body>
 </html>
