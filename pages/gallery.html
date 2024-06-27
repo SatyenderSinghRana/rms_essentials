@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Scroll Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .media {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .media img, .media video {
+            max-width: 100%;
+            height: auto;
+        }
+        .media a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Scrollable Media Page</h1>
+        <div class="media">
+            <a href="https://example.com/dummy-link1">
+                <img src="https://via.placeholder.com/800x400" alt="Dummy Image 1">
+            </a>
+            <a href="https://example.com/dummy-link2">
+                <img src="https://via.placeholder.com/800x400" alt="Dummy Image 2">
+            </a>
+            <a href="https://example.com/dummy-link3">
+                <video controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+            <a href="https://example.com/dummy-link4">
+                <video controls>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
