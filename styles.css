@@ -29,15 +29,6 @@
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin: 0 5px 10px; /* Adjust margin for spacing between buttons */
-    width: calc(50% - 10px); /* Adjust width to make two buttons per row */
-}
-
-@media (min-width: 768px) {
-    .button {
-        width: auto; /* Revert width back to auto on larger screens */
-        max-width: none; /* Remove max-width on larger screens */
-    }
 }
 
 .button:hover {
