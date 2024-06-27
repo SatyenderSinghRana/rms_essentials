@@ -7,30 +7,38 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 10;
-            padding: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .gallery-title {
+            margin: 20px;
+            font-size: 2em;
+            color: #333;
         }
         .gallery {
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            padding: 20px;
+            align-items: center;
         }
         .gallery img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 5px solid #ddd;
+            border-radius: 10px;
+            margin: 15px 0;
+            max-width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <h1 style="text-align:center;">Gallery</h1>
+    <div class="gallery-title">Gallery</div>
     <div class="gallery">
         <img src="Assets/Gallery/p1.jpeg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
     </div>
 </body>
 </html>
