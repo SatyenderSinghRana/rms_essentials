@@ -1,9 +1,7 @@
 /* Add styles for the new elements */
-
 .top-links {
     margin-top: 20px;
 }
-
 .top-link {
     display: inline-block;
     background-color: #333;
@@ -12,16 +10,12 @@
     text-decoration: none;
     border-radius: 5px;
 }
-
 .top-link:hover {
     background-color: #555;
 }
-
 .button-links {
     margin-top: 20px;
-    display: flex;
 }
-
 .button {
     display: inline-block;
     background-color: #007bff;
@@ -29,6 +23,8 @@
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .button:hover {
