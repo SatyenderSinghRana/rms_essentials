@@ -1,21 +1,51 @@
-/* Add styles for the new elements */
-.top-links {
-    margin-top: 20px;
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
-.top-link {
-    display: inline-block;
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header */
+header {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+    padding: 10px 0;
+    text-align: center;
 }
-.top-link:hover {
-    background-color: #555;
+
+.main-heading {
+    font-size: 2.5rem;
 }
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+}
+
+/* Buttons */
 .button-links {
     margin-top: 20px;
 }
+
 .button {
     display: inline-block;
     background-color: #007bff;
@@ -25,8 +55,44 @@
     border-radius: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
     background-color: #0056b3;
+}
+
+/* Animations */
+.animated {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
 }
