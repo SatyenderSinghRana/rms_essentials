@@ -44,24 +44,22 @@ section {
 /* Top links */
 .top-links {
     margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .top-link {
     display: inline-block;
-    background-color: #4CAF50; /* Green color, change as needed */
+    background-color: #007bff; /* Blue color, change as needed */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 0;
-    margin-right: -5px; /* Remove right margin for seamless border */
-    margin-bottom: -5px; /* Remove bottom margin for seamless border */
+    border-right: 1px solid #ccc; /* Border between links */
+    margin-right: -1px; /* Adjust for border */
     transition: background-color 0.3s ease;
 }
 
 .top-link:hover {
-    background-color: #45a049; /* Darker shade of green on hover */
+    background-color: #0056b3; /* Darker shade of blue on hover */
 }
 
 /* Gallery button */
@@ -82,45 +80,5 @@ section {
 /* Feedback and Suggestions */
 .feedback-link {
     color: #007bff; /* Blue color for link */
-    text-decoration: none;
+    text-decoration: underline; /* Underline style for feedback link */
     transition: color 0.3s ease;
-}
-
-.feedback-link:hover {
-    color: #004a99; /* Darker shade of blue on hover */
-}
-
-/* Animations */
-.animated {
-    animation: fadeIn 1s ease-out;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-}
-
-@media (max-width: 576px) {
-    .container {
-        width: 95%;
-    }
-}
