@@ -41,25 +41,53 @@ section {
     margin-bottom: 20px;
 }
 
-/* Buttons */
-.button-links {
+/* Top links */
+.top-links {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.button {
+.top-link {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #4CAF50; /* Green color, change as needed */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 0;
+    margin-right: -5px; /* Remove right margin for seamless border */
+    margin-bottom: -5px; /* Remove bottom margin for seamless border */
+    transition: background-color 0.3s ease;
+}
+
+.top-link:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+}
+
+/* Gallery button */
+.gallery-button {
+    display: inline-block;
+    background-color: #007bff; /* Blue color, change as needed */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-right: 10px;
-    margin-bottom: 10px;
     transition: background-color 0.3s ease;
 }
 
-.button:hover {
-    background-color: #0056b3;
+.gallery-button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Feedback and Suggestions */
+.feedback-link {
+    color: #007bff; /* Blue color for link */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.feedback-link:hover {
+    color: #004a99; /* Darker shade of blue on hover */
 }
 
 /* Animations */
