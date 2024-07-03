@@ -39,3 +39,13 @@ function fetchData() {
 
 // Fetch data when the page loads
 window.onload = fetchData;
+
+
+for table
+
+CREATE TABLE your_table_name (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(30) NOT NULL,
+    message TEXT NOT NULL,
+    reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
