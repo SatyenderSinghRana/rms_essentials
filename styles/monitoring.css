@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#databaseData {
+    margin-top: 20px;
+}
+
+#dataList {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
